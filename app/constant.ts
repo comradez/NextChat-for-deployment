@@ -316,7 +316,7 @@ const openaiModels = [
   "o1-preview",
 ];
 
-const googleModels = [
+const googleModels: string[] = [
   // "gemini-1.0-pro",
   // "gemini-1.5-pro-latest",
   // "gemini-1.5-flash-latest",
@@ -341,7 +341,7 @@ const anthropicModels = [
   "claude-3-5-sonnet-latest",
 ];
 
-const baiduModels = [
+const baiduModels: string[] = [
   // "ernie-4.0-turbo-8k",
   // "ernie-4.0-8k",
   // "ernie-4.0-8k-preview",
@@ -355,7 +355,7 @@ const baiduModels = [
   // "ernie-tiny-8k",
 ];
 
-const bytedanceModels = [
+const bytedanceModels: string[] = [
   // "Doubao-lite-4k",
   // "Doubao-lite-32k",
   // "Doubao-lite-128k",
@@ -364,7 +364,7 @@ const bytedanceModels = [
   // "Doubao-pro-128k",
 ];
 
-const alibabaModes = [
+const alibabaModes: string[] = [
   // "qwen-turbo",
   // "qwen-plus",
   // "qwen-max",
@@ -374,7 +374,7 @@ const alibabaModes = [
   // "qwen-max-longcontext",
 ];
 
-const tencentModels = [
+const tencentModels: string[] = [
   // "hunyuan-pro",
   // "hunyuan-standard",
   // "hunyuan-lite",
@@ -384,11 +384,11 @@ const tencentModels = [
   // "hunyuan-vision",
 ];
 
-const moonshotModes = [
+const moonshotModes: string[] = [
   // "moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k"
 ];
 
-const iflytekModels = [
+const iflytekModels: string[] = [
   // "general",
   // "generalv3",
   // "pro-128k",
@@ -396,11 +396,11 @@ const iflytekModels = [
   // "4.0Ultra",
 ];
 
-const xAIModes = [
+const xAIModes: string[] = [
   // "grok-beta"
 ];
 
-const chatglmModels = [
+const chatglmModels: string[] = [
   // "glm-4-plus",
   // "glm-4-0520",
   // "glm-4",
