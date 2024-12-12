@@ -424,17 +424,17 @@ export const DEFAULT_MODELS = [
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
   })),
-  ...openaiModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "azure",
-      providerName: "Azure",
-      providerType: "azure",
-      sorted: 2,
-    },
-  })),
+  // ...openaiModels.map((name) => ({
+  //   name,
+  //   available: true,
+  //   sorted: seq++,
+  //   provider: {
+  //     id: "azure",
+  //     providerName: "Azure",
+  //     providerType: "azure",
+  //     sorted: 2,
+  //   },
+  // })),
   ...googleModels.map((name) => ({
     name,
     available: true,
@@ -443,7 +443,7 @@ export const DEFAULT_MODELS = [
       id: "google",
       providerName: "Google",
       providerType: "google",
-      sorted: 3,
+      sorted: 2,
     },
   })),
   ...anthropicModels.map((name) => ({
@@ -454,7 +454,7 @@ export const DEFAULT_MODELS = [
       id: "anthropic",
       providerName: "Anthropic",
       providerType: "anthropic",
-      sorted: 4,
+      sorted: 3,
     },
   })),
   ...baiduModels.map((name) => ({
@@ -465,7 +465,7 @@ export const DEFAULT_MODELS = [
       id: "baidu",
       providerName: "Baidu",
       providerType: "baidu",
-      sorted: 5,
+      sorted: 4,
     },
   })),
   ...bytedanceModels.map((name) => ({
@@ -476,7 +476,7 @@ export const DEFAULT_MODELS = [
       id: "bytedance",
       providerName: "ByteDance",
       providerType: "bytedance",
-      sorted: 6,
+      sorted: 5,
     },
   })),
   ...alibabaModes.map((name) => ({
@@ -487,7 +487,7 @@ export const DEFAULT_MODELS = [
       id: "alibaba",
       providerName: "Alibaba",
       providerType: "alibaba",
-      sorted: 7,
+      sorted: 6,
     },
   })),
   ...tencentModels.map((name) => ({
@@ -498,7 +498,7 @@ export const DEFAULT_MODELS = [
       id: "tencent",
       providerName: "Tencent",
       providerType: "tencent",
-      sorted: 8,
+      sorted: 7,
     },
   })),
   ...moonshotModes.map((name) => ({
@@ -509,7 +509,7 @@ export const DEFAULT_MODELS = [
       id: "moonshot",
       providerName: "Moonshot",
       providerType: "moonshot",
-      sorted: 9,
+      sorted: 8,
     },
   })),
   ...iflytekModels.map((name) => ({
@@ -520,7 +520,7 @@ export const DEFAULT_MODELS = [
       id: "iflytek",
       providerName: "Iflytek",
       providerType: "iflytek",
-      sorted: 10,
+      sorted: 9,
     },
   })),
   ...xAIModes.map((name) => ({
@@ -531,7 +531,7 @@ export const DEFAULT_MODELS = [
       id: "xai",
       providerName: "XAI",
       providerType: "xai",
-      sorted: 11,
+      sorted: 10,
     },
   })),
   ...chatglmModels.map((name) => ({
@@ -542,7 +542,7 @@ export const DEFAULT_MODELS = [
       id: "chatglm",
       providerName: "ChatGLM",
       providerType: "chatglm",
-      sorted: 12,
+      sorted: 11,
     },
   })),
 ] as const;
