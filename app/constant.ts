@@ -475,17 +475,6 @@ export const DEFAULT_MODELS = [
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
   })),
-  // ...openaiModels.map((name) => ({
-  //   name,
-  //   available: true,
-  //   sorted: seq++,
-  //   provider: {
-  //     id: "azure",
-  //     providerName: "Azure",
-  //     providerType: "azure",
-  //     sorted: 2,
-  //   },
-  // })),
   ...googleModels.map((name) => ({
     name,
     available: true,
@@ -604,18 +593,7 @@ export const DEFAULT_MODELS = [
       id: "deepseek",
       providerName: "DeepSeek",
       providerType: "deepseek",
-      sorted: 13,
-    },
-  })),
-  ...deepseekModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "deepseek",
-      providerName: "DeepSeek",
-      providerType: "deepseek",
-      sorted: 13,
+      sorted: 12,
     },
   })),
 ] as const;
